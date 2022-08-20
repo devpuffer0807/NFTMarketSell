@@ -5,6 +5,8 @@ const Store = {
     openseaCollections: [],
     openseaNFTSByCollection: [],
     web3Provider: null,
+    listed: 'All',
+    nftSelectedList: {},
 }
 
 export default Store;

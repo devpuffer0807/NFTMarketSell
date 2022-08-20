@@ -23,10 +23,10 @@ export const getNFTAssetsBySlug = async (slug) => {
     }
 }
 
-export const getNFTsByOwner = async (walletAddress) => {
+export const getNFTsByOwnerContract = async (walletAddress, collectionAddress) => {
     try{
         let res = []
-        res = await AxiosOpensea.get(`assets?owner=${walletAddress}`)
+        res = await AxiosOpensea.get(`assets?owner=${walletAddress}&asset_contract_address=${collectionAddress}&include_orders=${true}&limit=50`)
         return res.data.assets
     }catch(e){
         return []

@@ -25,13 +25,7 @@ function App() {
   }, [updateSideBarActive, location])
 
   useEffect(() => {
-    const init = async () => {
-      const res = await getOpenseaCollection()
-      updateOpenseaCollections(() => {
-          return res
-      })
-    }
-    init()
+    
   }, [])
 
   return (
