@@ -1,0 +1,335 @@
+@font-face {
+    font-family: "Orbitron";
+    src: local("Orbitron"), url("../fonts/Orbitron/orbitron-v24-latin-regular.woff") format("woff");
+  }
+  
+  :root,
+  body {
+    font-family: "Orbitron" !important;
+}
+
+.App {
+    /* width: 100vw; */
+}
+
+.container {
+
+}
+
+.container .home-rank-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    height: 30px;
+}
+
+@media (max-width:460px) {
+    .container .home-rank-container {
+        width: 100%;
+    }
+}
+
+@media (max-width:835px) {
+    .container .img-slider{
+        padding-left: 10px;
+        margin-top: 40px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width:835px) {
+    .container .img-slider{
+        padding-left: 100px;
+        margin-top: 40px;
+        margin-right: 50px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        border-radius: 5px;
+    }
+}
+
+.container .home-rank-item {
+    width: 170px;
+    background-color: #23333F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 5px;
+}
+
+@media (min-width:600px) {
+    .container .home-progress-container {
+        display: flex;
+        flex-direction: column;
+        width: 400px;   
+    }
+}
+
+@media (max-width:600px) {
+    .container .home-progress-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.container .home-progress-container .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    color: #fff;
+}    
+
+@media (min-width:1534px) {
+    .container .home-card-container {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: #1A2C38;
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media (max-width:1534px) {
+    .container .home-card-container {
+        display: flex;
+        justify-content: center !important;
+        align-items: center;
+        background-color: #1A2C38;
+        width: 100%;
+        height: 200px;
+    }
+} 
+
+@media (max-width:1180px) {
+    .container .home-card-container {
+        display: flex;
+        background-color: #1A2C38;
+        width: 100%;
+        height: 350px;
+        flex-direction: row-reverse;
+        align-content: space-around;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+} 
+
+@media (max-width:731px) {
+    .container .home-card-container {
+        display: flex;
+        background-color: #1A2C38;
+        width: 100%;
+        height: 650px;
+        align-content: space-around;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+} 
+
+.container .home-big-card-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.ReactModal__Overlay--after-open {
+    background-color: rgba(0, 0, 0, 0.65) !important;
+}
+
+.ReactModal__Content {
+    overflow: inherit !important;
+}
+
+.nft-container {
+    padding-left: 30px;
+}
+
+.nft-sub-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nft-sub-title h1 {
+    color: #fff;
+    margin-left: 10px;
+}
+
+.nft-sub-menu {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.nft-sub-menu div { 
+    width: 100px;
+    height: 30px;  
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nft-function-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.nft-content-container {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    min-height: 500px;
+}
+
+.lottery-container {
+    display: flex;
+}
+
+.lottery-container .function-button-list {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.lottery-container .lottery-content-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+.nft-detail-container .nft-detail-header {
+    width: 100%;
+}
+
+.nft-detail-container .nft-detail-header .back {
+    width: 60px;
+    height: 25px;
+    background-color: #31404B;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.nft-detail-container .nft-detail-image-info-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.nft-detail-container .nft-detail-image-info-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.nft-detail-container .nft-detail-image-info-container .detail-container {
+    margin-left: 30px;
+}
+
+.nft-detail-container .nft-detail-image-info-container .detail-container .title{
+    color: #FFB800;
+    font-size: 10px;
+}
+
+.nft-detail-container .nft-detail-image-info-container .detail-container .name{
+    color: #fff;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.nft-detail-container .nft-detail-image-info-container .detail-container .detail-info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 350px;
+    max-width: 350px;
+    margin-top: 15px;
+    color: #475863;
+    font-size: 11px;
+}
+
+.nft-detail-container .nft-detail-image-info-container .detail-container .price-container{
+    margin-top: 20px;
+    min-width: 400px;
+    min-height: 100px;
+    border-radius: 5px;
+    background-color: #163042;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.nft-detail-container .nft-detail-image-info-container  .favorite{
+    color: #475863;
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+.nft-detail-container .nft-detail-image-info-container .price{
+    color: #fff;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.nft-detail-container .nft-detail-image-info-container .value{
+    color: #475863;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.nft-detail-container .nft-detail-image-info-container .detail-container .price-function-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.nft-detail-container .nft-detail-image-info-container .detail-container .price-function-container .buy {
+    width: 150px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00F2FF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nft-detail-container .nft-detail-image-info-container .detail-container .price-function-container .offer {
+    width: 150px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00F2FF;
+    border: #00F2FF solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nft-detail-container .nft-detail-image-info-container .detail-container .price-function-container .offer {
+    
+}
